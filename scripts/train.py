@@ -44,10 +44,10 @@ parser.add_argument('--train_data_folder', default=['training'], type=str, nargs
 parser.add_argument('--val_data_folder', default=['validation'], help='validation data folder')
 parser.add_argument('--save_train_samplelist', action='store_true')
 parser.add_argument('--load_train_samplelist', action='store_true')
-parser.add_argument('--train_samplelist_path', type=str, default='/localdisk/szhang83/Developer/densecap/densecap_vid/train_samplelist.pkl')
+parser.add_argument('--train_samplelist_path', type=str, default='/data2/v_sonyzhang/densecap/densecap_vid/train_samplelist.pkl')
 parser.add_argument('--save_valid_samplelist', action='store_true')
 parser.add_argument('--load_valid_samplelist', action='store_true')
-parser.add_argument('--valid_samplelist_path', type=str, default='/localdisk/szhang83/Developer/densecap/densecap_vid/valid_samplelist.pkl')
+parser.add_argument('--valid_samplelist_path', type=str, default='/data2/v_sonyzhang/densecap/densecap_vid/valid_samplelist.pkl')
 parser.add_argument('--start_from', default='', help='path to a model checkpoint to initialize model weights from. Empty = dont')
 parser.add_argument('--max_sentence_len', default=20, type=int)
 parser.add_argument('--num_workers', default=1, type=int)
@@ -98,7 +98,7 @@ parser.add_argument('--reduce_factor', default=0.5, type=float, help='Factor of 
 parser.add_argument('--grad_norm', default=1, type=float, help='Gradient clipping norm')
 
 # Data parallel
-parser.add_argument('--dist_url', default='file:///localdisk/szhang83/Developer/densecap/nonexistent_file', type=str, help='url used to set up distributed training')
+parser.add_argument('--dist_url', default='file:///data2/v_sonyzhang/densecap/nonexistent_file', type=str, help='url used to set up distributed training')
 parser.add_argument('--dist_backend', default='gloo', type=str, help='distributed backend')
 parser.add_argument('--world_size', default=1, type=int, help='number of distributed processes')
 
